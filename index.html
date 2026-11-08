@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twinspotter: find the same item on AliExpress</title>
+<meta name="description" content="A browser extension for UK shoppers: check whether an Amazon UK product is the same item sold on AliExpress, and compare the price.">
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #5f6368; --bg: #fff; --card: #f5f5f7; --accent: #c2410c; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f2f2f2; --muted: #a8a8ad; --bg: #141414; --card: #1f1f22; --accent: #fb923c; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 12px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 8px; }
+  p, li { color: var(--fg); }
+  .lead { font-size: 1.15rem; color: var(--muted); margin: 0 0 24px; }
+  .status { display: inline-block; font-size: .85rem; font-weight: 600; color: var(--accent); border: 1px solid currentColor; border-radius: 999px; padding: 2px 12px; margin-bottom: 20px; }
+  .card { background: var(--card); border-radius: 12px; padding: 16px 20px; }
+  ol, ul { padding-left: 22px; }
+  footer a { color: inherit; }
+  footer { margin-top: 48px; font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <span class="status">In private testing</span>
+  <h1>Twinspotter</h1>
+  <p class="lead">A browser extension for UK shoppers. On an Amazon UK product page, it checks whether the same item is sold on AliExpress, and shows the price and delivery time side by side.</p>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>On an Amazon UK product page, click <strong>Spot the twin</strong> in the extension's panel. Nothing happens until you click.</li>
+    <li>The extension compares the product's photo and title with AliExpress listings.</li>
+    <li>It shows any match with its price in pounds and estimated delivery, plus signs that a product may be a generic import (an unknown brand, a third-party seller).</li>
+  </ol>
+
+  <h2>Affiliate disclosure</h2>
+  <div class="card">
+    <p>Twinspotter is a member of the AliExpress affiliate programme. Links to AliExpress shown in the extension may earn us a commission if you buy, at no extra cost to you. This is shown in the store listing, before install and in the extension's panel.</p>
+    <ul>
+      <li>Affiliate links appear only in the extension's own panel and open only when you click them.</li>
+      <li>No automatic redirects, no cookies set in the background, and no changes to AliExpress or Amazon pages.</li>
+      <li>No coupons, cashback or rewards.</li>
+    </ul>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>When you click <strong>Spot the twin</strong>, the extension sends only the product's Amazon ID, title, price, brand and image link to our server to find matches. It doesn't collect your name, email, browsing history or Amazon account details, and it doesn't run on any other site.</p>
+
+  <h2>Availability</h2>
+  <p>Twinspotter is in private testing in the UK. It will be published on the Chrome Web Store and Firefox Add-ons once testing is complete.</p>
+
+  <footer>
+    <p>Twinspotter is made by Kodatech. Contact: <a href="mailto:partners@kodatech.co.uk">partners@kodatech.co.uk</a></p>
+    <p>Twinspotter is an independent tool and is not affiliated with Amazon or AliExpress. Amazon is a trademark of Amazon.com, Inc. AliExpress is a trademark of Alibaba Group.</p>
+  </footer>
+</main>
+</body>
+</html>
